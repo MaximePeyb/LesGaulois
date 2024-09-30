@@ -27,12 +27,12 @@ public class Druide {
 	public void preparerPotion() {
 		Random rd = new Random();
 		
-		forcePotion = rd.nextInt(effetPotionMax+1);
+		// forcePotion = rd.nextInt(effetPotionMax+1); debug : A REMETTRE
+		forcePotion = 5;
 		
 		while (forcePotion<effetPotionMin)
 			forcePotion = rd.nextInt(effetPotionMax+1);
 		
-		// System.out.println(forcePotion);
 		if (forcePotion >7) 
 			parler("J'ai préparé une super potion de force");
 		else
