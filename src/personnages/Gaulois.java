@@ -66,9 +66,9 @@ public class Gaulois {
 	
 	public void faireUneDonation(Musee musee) {
 		parler("Je donne au musée tout mes trophées :");
-		for (Equipement elt : trophees) {
-			System.out.print("\n- "+elt);
-			musee.donnerTrophee(this, new Trophee(this, elt));
+		for (int i=0; i<nbTrophees;i++) {
+			System.out.print("\n- "+trophees[i]);
+			musee.donnerTrophee(this, new Trophee(this, trophees[i]));
 		}
 	}
 
